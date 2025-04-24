@@ -16,9 +16,11 @@ contains a shell script with commands that are executed when Jenkins processes
 the "Deliver" stage of your Pipeline.
 
 Added to test webhook
+---
 # Run using Using Docker
-## Run maven
+### Run maven
 
+---
 
 # Run using Manual Installation
 ### Install Java Jdk 11
@@ -33,6 +35,7 @@ cd /opt
 wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
 mv apache-maven-3.9.9 maven
 ```
+
 Set environment variable
 ```bash
 sudo vi /etc/profile.d/maven.sh
@@ -40,15 +43,19 @@ export M2_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
 sudo chmod +x /etc/profile.d/maven.sh
 ```
+
 Apply changes
 ```bash
 source /etc/profile.d/maven.sh
 ```
+
 ### Check Version
 ```bash
 java --version
 mvn --version
 ```
+
+---
 
 ### Clone the Repository
 ```bash
