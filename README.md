@@ -56,5 +56,11 @@ git clone https://github.com/ShubhamBhavsar101/sample-java-maven-app.git
 cd sample-java-maven-app
 ```
 
+## Run the code
+```bash
+mvn clean install
 
+cd target
+java -jar my-app-1.0-SNAPSHOT.jar
+```
 
