@@ -17,15 +17,6 @@ the "Deliver" stage of your Pipeline.
 
 Added to test webhook
 # Run using Using Docker
-## Install Docker
-
-```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-```
 ## Run maven
 
 
@@ -33,7 +24,7 @@ newgrp docker
 ## Install Java Jdk 11
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk maven git -y
+sudo apt install openjdk-17-jre git -y
 ```
 
 ## Install Maven
