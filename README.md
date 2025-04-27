@@ -16,16 +16,20 @@ sudo apt install openjdk-17-jre git -y
 ### Install Maven
 ```bash
 cd /opt
-wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
-tar -xvzf apache-maven-3.9.9-bin.tar.gz
-mv apache-maven-3.9.9 maven
+sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+sudo tar -xvzf apache-maven-3.9.9-bin.tar.gz
+sudo mv apache-maven-3.9.9 maven
 ```
 
 Set environment variable
 ```bash
 sudo vi /etc/profile.d/maven.sh
+```
+```bash
 export M2_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
+```
+```bash
 sudo chmod +x /etc/profile.d/maven.sh
 ```
 
