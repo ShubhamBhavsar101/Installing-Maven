@@ -10,7 +10,7 @@
 ### Install Java Jdk 11
 ```bash
 sudo apt update
-sudo apt install openjdk-17-jre git -y
+sudo apt install openjdk-17-jdk git -y
 ```
 
 ### Install Maven
